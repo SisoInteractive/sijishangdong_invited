@@ -1,0 +1,112 @@
+// Created by sam mok 2015(Siso brand interactive team).
+
+/*************************************/
+    /* Reset */
+/*************************************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);}
+
+html {
+  height: 100%;
+  font-family: "microsoft yahei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p, a, button, span {
+  -webkit-font-smoothing: antialiased;
+}
+
+input {
+  outline: none;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+/*************************************/
+    /* Main */
+/*************************************/
+.hide {
+  display: none;
+}
+
+.swiper-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* loading */
+.loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 300;
+  background: #000;
+
+  text-align: center;
+}
+
+.loading-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 300;
+}
+
+/* scene */
+.scene {
+  height: 100%;
+  background-size: 100% 100%!important;
+}
+
+/* audio */
+#audio { display: none; position: absolute; left: -5000px;}
+
+/* animation */
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+/* bg */
+.scene{
+  background-size: 100% 100%!important;
+}
+
+/* scene */
+
+/*************************************/
+    /* Responsive */
+/*************************************/
+@media screen and (min-width: 768px) {
+}
