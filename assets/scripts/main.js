@@ -8,16 +8,18 @@ var app = {
         var options = {
             useEasing : true,
             useGrouping : true,
-            separator : ',',
-            decimal : '.',
+            separator : '',
+            decimal : '',
             prefix : '',
             suffix : ''
         };
-        var userIdCountUp = new CountUp("userId", 0, 888018, 0, 2.5, options);
+        var userIdCountUp = new CountUp("userId", 0, 888018, 0, 1.5, options);
 
         //  create slider
         app.mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical',
+
+            parallax : true,
 
             noSwiping: false,
 
@@ -27,7 +29,7 @@ var app = {
                 //  scene 01
                 setTimeout(function () {
                     $('.scene01').addClass('active activeTransition');
-                }, 500);
+                }, 2500);
             },
 
             onTransitionStart: function (swiper) {
@@ -44,7 +46,8 @@ var app = {
             onTransitionEnd: function (swiper) {
                 var curIndex = swiper.activeIndex;
                 //  show content
-                $('.scene').eq(curIndex).addClass('active activeTransition');
+                $('.scene').eq(curIndex).addClass('active activeTransition')
+                    .siblings('.scene').removeClass('active activeTransition');
 
             }
         });
