@@ -38,7 +38,7 @@ var app = {
                         $('.countUp').empty();
                         userIdCountUp.reset();
                         userIdCountUp.start();
-                    }, 1000);
+                    }, 200);
                 }
             },
 

@@ -485,7 +485,7 @@ input {
   width: 0;
   height: 4px;
   bottom: -4px;
-  right: 230px;
+  right: 228px;
 }
 .scene02.delay {
   /* border */
@@ -549,32 +549,32 @@ input {
           transition: all 2s;
 }
 .scene02.delay .border01 {
-  -webkit-transition: all .2s linear;
-          transition: all .2s linear;
-  -webkit-transition-delay: 3.2s;
-          transition-delay: 3.2s;
+  -webkit-transition: all .3s linear;
+          transition: all .3s linear;
+  -webkit-transition-delay: 3.3s;
+          transition-delay: 3.3s;
 }
 .scene02.delay .border02 {
-  -webkit-transition: all .2s linear;
-          transition: all .2s linear;
-  -webkit-transition-delay: 3.2s;
-          transition-delay: 3.2s;
+  -webkit-transition: all .3s linear;
+          transition: all .3s linear;
+  -webkit-transition-delay: 3.6s;
+          transition-delay: 3.6s;
 }
 .scene02.delay .border03 {
-  -webkit-transition: all .2s linear;
-          transition: all .2s linear;
-  -webkit-transition-delay: 3.2s;
-          transition-delay: 3.2s;
+  -webkit-transition: all .3s linear;
+          transition: all .3s linear;
+  -webkit-transition-delay: 3.9s;
+          transition-delay: 3.9s;
 }
 .scene02.delay .border04 {
-  -webkit-transition: all .2s linear;
-          transition: all .2s linear;
-  -webkit-transition-delay: 3.2s;
-          transition-delay: 3.2s;
+  -webkit-transition: all .3s linear;
+          transition: all .3s linear;
+  -webkit-transition-delay: 4.2s;
+          transition-delay: 4.2s;
 }
 .scene02.delay .border05 {
-  -webkit-transition: all .2s linear;
-          transition: all .2s linear;
+  -webkit-transition: all .1s linear;
+          transition: all .1s linear;
   -webkit-transition-delay: 3.2s;
           transition-delay: 3.2s;
 }
@@ -796,8 +796,8 @@ input {
   height: 60px;
   line-height: 65px;
   text-align: center;
-  color: #5e4c3e;
-  font-size: 14px;
+  color: #690D1B;
+  font-size: 24px;
   position: absolute;
   right: 2px;
   bottom: 2px;
