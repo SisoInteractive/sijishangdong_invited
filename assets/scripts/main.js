@@ -14,7 +14,7 @@ var app = {
             suffix : ''
         };
 
-        this.userIdCountUp = new CountUp("userId", 0, 888001, 0, 1.5, options);
+        this.userIdCountUp = new CountUp("userId", 0, 888001, 0, 1.2, options);
 
         //  create slider
         var isVisitedIdPage = false;
@@ -93,6 +93,7 @@ var app = {
             console.log('get game result from socket::', data);
             localStorage.invite_visitedUserId = parseInt(data);
             localStorage.invite_isvisited = true;
+            app.userIdCountUp.endVal = parseInt(data);
         }
     },
 
