@@ -411,6 +411,7 @@ input {
 }
 .scene02 .text {
   opacity: 0;
+  display: block;
 }
 .scene02 .text01 {
   -webkit-transition: all .5s;
@@ -609,6 +610,9 @@ input {
 }
 .scene04 .text {
   opacity: 0;
+}
+.scene04.active .text {
+  display: block;
 }
 .scene04.active .text01 {
   -webkit-animation: fadeInLeft .6s 1 forwards;

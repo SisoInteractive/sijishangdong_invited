@@ -44,8 +44,7 @@ var app = {
             onTransitionEnd: function (swiper) {
                 var curIndex = swiper.activeIndex;
                 //  show content
-                $('.scene').eq(curIndex).addClass('active activeTransition')
-                    .siblings('.scene').removeClass('active activeTransition');
+                $('.scene').eq(curIndex).addClass('active activeTransition');
 
             }
         });
