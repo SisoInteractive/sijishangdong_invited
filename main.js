@@ -15,6 +15,6 @@ for (var i = 1; i <= 150; i++) {
 
         idList.push('888' + id);
     }
-
-    console.dir(idList);
 }
+
+console.dir(idList.length);
