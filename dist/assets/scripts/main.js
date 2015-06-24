@@ -26,8 +26,8 @@ var app = {
                 console.log('Initialized...');
                 //  scene 01
                 setTimeout(function () {
-                    $('.scene01').addClass('active activeTransition');
-                }, 500);
+                    $('.scene01').addClass('active');
+                }, 3000);
             },
 
             onTransitionStart: function (swiper) {
@@ -44,8 +44,8 @@ var app = {
             onTransitionEnd: function (swiper) {
                 var curIndex = swiper.activeIndex;
                 //  show content
-                $('.scene').eq(curIndex).addClass('active activeTransition')
-                    .siblings('.scene').removeClass('active activeTransition');
+                $('.scene').eq(curIndex).addClass('active')
+                    .siblings('.scene').removeClass('active');
 
             }
         });
