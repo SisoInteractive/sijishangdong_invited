@@ -434,6 +434,7 @@ input {
 }
 
 /* scene02 */
+
 .scene02 {
   .border-block {
     position: absolute;
@@ -443,16 +444,12 @@ input {
     height: 12px;
     background: #90d2df;
   }
-
-  .house {
-    position: absolute;
-  }
   
   .text-wrap {
     position: absolute;
     width: 263px;
     height: 268px;
-    border: 4px solid #5e4c3e;
+    border: 4px solid transparent;
     padding: 7px 8px;
     box-sizing: border-box;
 
@@ -470,6 +467,87 @@ input {
     }
   }
 
+  .english01 {
+    opacity: 0;
+    height: auto;
+    transform: translate3d(-60%, 0, 0);
+  }
+
+  .line01 {
+    opacity: 1;
+    width: 0;
+  }
+
+  .english02-wrap {
+    .english02 {
+      opacity: 0;
+      transform: translate3d(60%, 0, 0);
+    }
+
+    .line02 {
+      height:0;
+    }
+  }
+
+  .house {
+    opacity: 0;
+    position: absolute;
+    transform: translate3d(60%, 0, 0);
+  }
+
+  /* border */
+  .border {
+    position: absolute;
+    background: rgb(255, 243, 182);
+  }
+
+  .border01 {
+    width: 4px;
+    height: 0;
+    bottom: -4px;
+    left: -4px;
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
+
+  .border02 {
+    width: 0;
+    height: 4px;
+    top: -4px;
+    left: 0;
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
+
+  .border03 {
+    width: 4px;
+    height: 0;
+    top: -4px;
+    right: -4px;
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
+
+  .border04 {
+    width: 0;
+    height: 4px;
+    bottom: -4px;
+    right: -4px;
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
+
+  .border05 {
+    width: 0;
+    height: 4px;
+    bottom: -4px;
+    right: 230px;
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
+}
+
+.scene02.delay {
   .text01 {
     transition: all .5s;
     transition-delay: 0s;
@@ -494,44 +572,56 @@ input {
   }
 
   .english01 {
-    opacity: 0;
-    height: auto;
-    transform: translate3d(-60%, 0, 0);
     transition: all 1.5s;
     transition-delay: 2s;
   }
 
   .line01 {
-    opacity: 1;
-    width: 0;
     transition: all 1.5s;
     transition-delay: 1s;
   }
 
   .english02-wrap {
     .english02 {
-      opacity: 0;
-      transform: translate3d(60%, 0, 0);
       transition: all 1.5s;
       transition-delay: 2s;
     }
 
     .line02 {
-      height:0;
       transition: all 1.5s;
       transition-delay: 1s;
     }
   }
 
   .house {
-    opacity: 0;
-    transform: translate3d(60%, 0, 0);
     transition: all 2s;
   }
-}
 
-.scene02.houseOut {
+  /* border */
+  .border01 {
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
 
+  .border02 {
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
+
+  .border03 {
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
+
+  .border04 {
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
+
+  .border05 {
+    transition: all .2s linear;
+    transition-delay: 3.2s;
+  }
 }
 
 .scene02.active {
@@ -575,6 +665,31 @@ input {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+
+  /* border */
+  .border {
+    background: #5e4c3e;
+  }
+
+  .border01 {
+    height: 268px;
+  }
+
+  .border02 {
+    width: 259px;
+  }
+
+  .border03 {
+    height: 268px;
+  }
+
+  .border04 {
+    width: 176px;
+  }
+
+  .border05 {
+    width: 30px;
+  }
 }
 
 /* scene03 */
@@ -596,12 +711,22 @@ input {
     overflow: hidden;
     opacity: 1;
     height: 0;
-    transition: all 1.4s;
-    transition-delay: 1.2s;
   }
 
   .text {
     opacity: 0;
+  }
+
+  .address {
+    opacity: 0;
+    position: absolute;
+  }
+}
+
+.scene03.delay {
+  .timer04 {
+    transition: all 1.4s;
+    transition-delay: 1.2s;
   }
 
   .text01 {
@@ -620,11 +745,6 @@ input {
     transform: translate3d(-50px, 0, 0);
     transition: all 1.2s;
     transition-delay: 3s;
-  }
-
-  .address {
-    opacity: 0;
-    position: absolute;
   }
 }
 

@@ -8,7 +8,7 @@ var app = {
         var options = {
             useEasing : true,
             useGrouping : true,
-            separator : ',',
+            separator : '',
             decimal : '',
             prefix : '',
             suffix : ''
@@ -29,7 +29,7 @@ var app = {
                 //  scene 01
                 setTimeout(function () {
                     $('.scene01').addClass('active activeTransition');
-                }, 2500);
+                }, 500);
             },
 
             onTransitionStart: function (swiper) {
@@ -46,8 +46,8 @@ var app = {
             onTransitionEnd: function (swiper) {
                 var curIndex = swiper.activeIndex;
                 //  show content
-                $('.scene').eq(curIndex).addClass('active activeTransition')
-                    .siblings('.scene').removeClass('active activeTransition');
+                $('.scene').eq(curIndex).addClass('active activeTransition delay')
+                    .siblings('.scene').removeClass('active activeTransition delay');
 
             }
         });
