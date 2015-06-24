@@ -48,6 +48,7 @@ var app = {
                     if (localStorage.invite_isvisited) {
                         var userId = localStorage.invite_visitedUserId;
                         app.userIdCountUp.endVal = parseInt(userId);
+                        console.log("you have been retrieved yor id: ", userId);
                     } else {
                         app.server();
                     }

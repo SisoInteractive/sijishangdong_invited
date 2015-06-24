@@ -706,11 +706,39 @@ input {
 
   .text {
     opacity: 0;
+
+    img {
+      display: block;
+    }
   }
 
   .address {
     opacity: 0;
     position: absolute;
+  }
+
+  .text01 {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .text02 {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .text03 {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .text04 {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .text05 {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .text06 {
+    transform: translate3d(-50px, 0, 0);
   }
 }
 
@@ -721,21 +749,33 @@ input {
   }
 
   .text01 {
-    transform: translate3d(-50px, 0, 0);
     transition: all 1.2s;
     transition-delay: 1.8s;
   }
 
   .text02 {
-    transform: translate3d(-50px, 0, 0);
     transition: all 1.2s;
     transition-delay: 2.4s;
   }
 
   .text03 {
-    transform: translate3d(-50px, 0, 0);
     transition: all 1.2s;
     transition-delay: 3s;
+  }
+
+  .text04 {
+    transition: all 1.2s;
+    transition-delay: 3.6s;
+  }
+
+  .text05 {
+    transition: all 1.2s;
+    transition-delay: 4.2s;
+  }
+
+  .text06 {
+    transition: all 1.2s;
+    transition-delay: 4.8s;
   }
 }
 
@@ -759,24 +799,14 @@ input {
     height: 330px;
   }
 
-  .text01 {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .text02 {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .text03 {
+  .text01, .text02, .text03, .text04, .text05, .text06 {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 
   .address {
     -webkit-animation: bounceInTop1 2.2s 1 forwards;
-    -webkit-animation-delay: 3.4s;
+    -webkit-animation-delay: 5.4s;
   }
 }
 

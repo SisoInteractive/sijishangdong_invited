@@ -654,9 +654,36 @@ input {
 .scene03 .text {
   opacity: 0;
 }
+.scene03 .text img {
+  display: block;
+}
 .scene03 .address {
   opacity: 0;
   position: absolute;
+}
+.scene03 .text01 {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+}
+.scene03 .text02 {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+}
+.scene03 .text03 {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+}
+.scene03 .text04 {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+}
+.scene03 .text05 {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+}
+.scene03 .text06 {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
 }
 .scene03.delay .timer04 {
   -webkit-transition: all 1.4s;
@@ -665,28 +692,40 @@ input {
           transition-delay: 1.2s;
 }
 .scene03.delay .text01 {
-  -webkit-transform: translate3d(-50px, 0, 0);
-          transform: translate3d(-50px, 0, 0);
   -webkit-transition: all 1.2s;
           transition: all 1.2s;
   -webkit-transition-delay: 1.8s;
           transition-delay: 1.8s;
 }
 .scene03.delay .text02 {
-  -webkit-transform: translate3d(-50px, 0, 0);
-          transform: translate3d(-50px, 0, 0);
   -webkit-transition: all 1.2s;
           transition: all 1.2s;
   -webkit-transition-delay: 2.4s;
           transition-delay: 2.4s;
 }
 .scene03.delay .text03 {
-  -webkit-transform: translate3d(-50px, 0, 0);
-          transform: translate3d(-50px, 0, 0);
   -webkit-transition: all 1.2s;
           transition: all 1.2s;
   -webkit-transition-delay: 3s;
           transition-delay: 3s;
+}
+.scene03.delay .text04 {
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+  -webkit-transition-delay: 3.6s;
+          transition-delay: 3.6s;
+}
+.scene03.delay .text05 {
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+  -webkit-transition-delay: 4.2s;
+          transition-delay: 4.2s;
+}
+.scene03.delay .text06 {
+  -webkit-transition: all 1.2s;
+          transition: all 1.2s;
+  -webkit-transition-delay: 4.8s;
+          transition-delay: 4.8s;
 }
 .scene03.active .timer01 {
   -webkit-animation: bounceInTop1 .8s 1 forwards;
@@ -703,24 +742,19 @@ input {
 .scene03.active .timer04 {
   height: 330px;
 }
-.scene03.active .text01 {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-.scene03.active .text02 {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-.scene03.active .text03 {
+.scene03.active .text01,
+.scene03.active .text02,
+.scene03.active .text03,
+.scene03.active .text04,
+.scene03.active .text05,
+.scene03.active .text06 {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 .scene03.active .address {
   -webkit-animation: bounceInTop1 2.2s 1 forwards;
-  -webkit-animation-delay: 3.4s;
+  -webkit-animation-delay: 5.4s;
 }
 /* scene04 */
 .scene04 .title {
@@ -796,7 +830,7 @@ input {
   height: 60px;
   line-height: 65px;
   text-align: center;
-  color: #690D1B;
+  color: #3e2327;
   font-size: 24px;
   position: absolute;
   right: 2px;

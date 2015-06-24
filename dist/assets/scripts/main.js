@@ -13,9 +13,12 @@ var app = {
             prefix : '',
             suffix : ''
         };
-        var userIdCountUp = new CountUp("userId", 0, 888018, 0, 1.5, options);
+
+        this.userIdCountUp = new CountUp("userId", 0, 888001, 0, 1.5, options);
 
         //  create slider
+        var isVisitedIdPage = false;
+
         app.mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical',
 
@@ -36,10 +39,22 @@ var app = {
                 if (swiper.previousIndex == 3) {
                     setTimeout(function () {
                         $('.countUp').empty();
-                        userIdCountUp.reset();
-                        userIdCountUp.start();
+                        app.userIdCountUp.reset();
+                        app.userIdCountUp.start();
                     }, 200);
                 }
+
+                if (isVisitedIdPage == false) {
+                    if (localStorage.invite_isvisited) {
+                        var userId = localStorage.invite_visitedUserId;
+                        app.userIdCountUp.endVal = parseInt(userId);
+                        console.log("you have been retrieved yor id: ", userId);
+                    } else {
+                        app.server();
+                    }
+                }
+
+                isVisitedIdPage = true;
             },
 
             //  router
@@ -60,7 +75,30 @@ var app = {
             document.removeEventListener('touchstart', initSound, false);
         };
         document.addEventListener('touchstart', initSound, false);
+    },
 
+    server: function () {
+        console.log("Initializing server...");
+
+        //  socket io
+        var socket = io.connect('http://120.26.48.94:89');
+
+        //  visit server
+        socket.emit('visited', {});
+
+        //  '获取游戏结果'
+        socket.on('returnedId', onGameResultHandle);
+
+        function onGameResultHandle(data) {
+            console.log('get game result from socket::', data);
+            localStorage.invite_visitedUserId = parseInt(data);
+            localStorage.invite_isvisited = true;
+        }
+    },
+
+    clearCache: function () {
+        localStorage.removeItem('invite_isvisited');
+        localStorage.removeItem('invite_visitedUserId');
     },
 
     start: function (){
