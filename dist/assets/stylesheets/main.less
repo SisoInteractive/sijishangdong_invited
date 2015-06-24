@@ -273,7 +273,6 @@ input {
   .scene-main01 {
     opacity: 0;
     transform: translate3d(30px, 0, 0);
-
   }
 
   .scene-main02 {
@@ -284,20 +283,14 @@ input {
   /* block */
   .scene-main03 {
     transform: scale(0);
-    transition: all .5s ease-out;
-    transition-delay: 1s;
   }
 
   .scene-main04 {
     transform: scale(0);
-    transition: all .5s ease-out;
-    transition-delay: 1.2s;
   }
 
   .scene-main05 {
     transform: scale(0);
-    transition: all .5s ease-out;
-    transition-delay: 1.4s;
   }
 
   .animateDelay(@timer) {
@@ -342,10 +335,6 @@ input {
   }
 }
 
-/* scene01 */
-.scene01 {
-
-}
 
 .scene-main-parent.active {
   .scene-main01 {
@@ -403,6 +392,40 @@ input {
     animation: zoomFadeIn 1.5s ease-out forwards;
     -webkit-animation: zoomFadeIn 1.5s ease-out forwards;
   }
+}
+
+.scene-main-parent.activeTransition {
+  /* text */
+  .scene-main01 {
+    transition: all 1.3s ease-out;
+    transition-delay: 1.8s;
+  }
+
+  .scene-main02 {
+    transition: all 1.3s ease-out;
+    transition-delay: 1.8s;
+  }
+
+  /* block */
+  .scene-main03 {
+    transition: all .5s ease-out;
+    transition-delay: 1s;
+  }
+
+  .scene-main04 {
+    transition: all .5s ease-out;
+    transition-delay: 1.2s;
+  }
+
+  .scene-main05 {
+    transition: all .5s ease-out;
+    transition-delay: 1.4s;
+  }
+}
+
+/* scene01 */
+.scene01 {
+
 }
 
 /* scene02 */

@@ -235,7 +235,9 @@ input {
 /* scene */
 /* scene main */
 .scene-main {
-  
+  /* text */
+  /* block */
+  /* circle */
 }
 .scene-main .scene-main01 {
   opacity: 0;
@@ -251,28 +253,16 @@ input {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: all 0.5s ease-out;
-          transition: all 0.5s ease-out;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
 }
 .scene-main .scene-main04 {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: all 0.5s ease-out;
-          transition: all 0.5s ease-out;
-  -webkit-transition-delay: 1.2s;
-          transition-delay: 1.2s;
 }
 .scene-main .scene-main05 {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: all 0.5s ease-out;
-          transition: all 0.5s ease-out;
-  -webkit-transition-delay: 1.4s;
-          transition-delay: 1.4s;
 }
 .scene-main .scene-main06 {
   opacity: 0;
@@ -309,7 +299,6 @@ input {
   animation-delay: 3.5s !important;
   -webkit-animation-delay: 3.5s !important;
 }
-/* scene01 */
 .scene-main-parent.active {
   /* circle */
 }
@@ -370,6 +359,41 @@ input {
   animation: zoomFadeIn 1.5s ease-out forwards;
   -webkit-animation: zoomFadeIn 1.5s ease-out forwards;
 }
+.scene-main-parent.activeTransition {
+  /* text */
+  /* block */
+}
+.scene-main-parent.activeTransition .scene-main01 {
+  -webkit-transition: all 1.3s ease-out;
+          transition: all 1.3s ease-out;
+  -webkit-transition-delay: 1.8s;
+          transition-delay: 1.8s;
+}
+.scene-main-parent.activeTransition .scene-main02 {
+  -webkit-transition: all 1.3s ease-out;
+          transition: all 1.3s ease-out;
+  -webkit-transition-delay: 1.8s;
+          transition-delay: 1.8s;
+}
+.scene-main-parent.activeTransition .scene-main03 {
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+.scene-main-parent.activeTransition .scene-main04 {
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+.scene-main-parent.activeTransition .scene-main05 {
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
+}
+/* scene01 */
 /* scene02 */
 .scene02 .house {
   position: absolute;
