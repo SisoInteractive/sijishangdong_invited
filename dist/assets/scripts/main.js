@@ -37,11 +37,11 @@ var app = {
 
             onTransitionStart: function (swiper) {
                 if (swiper.previousIndex == 6) {
+                    $('.countUp').empty();
                     setTimeout(function () {
-                        $('.countUp').empty();
                         app.userIdCountUp.reset();
                         app.userIdCountUp.start();
-                    }, 200);
+                    }, 1200);
                 }
 
                 if (isVisitedIdPage == false) {
