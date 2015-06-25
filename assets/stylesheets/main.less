@@ -181,8 +181,8 @@ input {
 }
 
 .scene-main {
-  width: 166px;
-  height: 336px;
+  width: 122px;
+  height: 260px;
 }
 
 /* audio */
@@ -685,6 +685,9 @@ input {
 
 /* scene03 */
 .scene03 {
+  background: url("../images/sa6-bg.jpg");
+  background-size: cover;
+  
   .info {
     position: absolute;
 
@@ -884,14 +887,17 @@ input {
 
 /* scene05 */
 .scene05 {
+  background: url("../images/sa7-bg.jpg");
+  background-size: cover!important;
+
   .text-wrap {
     width: 180px;
-    height: 309px;
-    background: url("../images/s5-wrap.png");
+    height: 417px;
+    background: url("../images/sa7-wrap.png");
     background-size: 100% 100%;
     position: absolute;
-    left: 21.6%;
-    top: 16.3%;
+    left: 92px;
+    top: 0;
   }
 
   .text {
@@ -902,8 +908,8 @@ input {
   .userId {
     opacity: 0;
     width: 114px;
-    height: 60px;
-    line-height: 65px;
+    height: 50px;
+    line-height: 55px;
     text-align: center;
     color: #3e2327;
     font-size: 24px;
@@ -939,6 +945,89 @@ input {
     opacity: 1;
   }
 }
+
+#iSlider-arrow {
+  position: absolute;
+  width: 1.1em;
+  height: 1.1em;
+  left: 0;
+  right: 0;
+  bottom: 8%;
+  margin: 0 auto;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 10000;
+  opacity: 1;
+  -webkit-animation: nextPage 1.2s linear infinite;
+}
+@-webkit-keyframes nextPage {
+  0% {
+    -webkit-transform: translateY(40px) rotate(-45deg);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateY(10px) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+/* scene0a3 */
+.scene0a3,
+.scene0a4,
+.scene0a5{
+  background: url("../images/sa3-02.png") no-repeat;
+  background-size: cover!important;
+
+  .text-group {
+    position: absolute;
+
+    img {
+      display: block;
+    }
+  }
+
+  .text01 {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+    transition: all 1.3s ease-out;
+  }
+
+  .text02 {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: all 1.3s ease-out;
+  }
+}
+
+.scene0a3.active,
+.scene0a4.active,
+.scene0a5.active {
+  .text01 {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+
+  .text02 {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+
+}
+
+/* scene0a4 */
+.scene0a4 {
+  background: url("../images/sa4-01.png") no-repeat;
+}
+
+/* scene0a5 */
+.scene0a5 {
+  background: url("../images/sa5-01.jpg") no-repeat;
+}
+
 /*************************************/
     /* Responsive */
 /*************************************/
