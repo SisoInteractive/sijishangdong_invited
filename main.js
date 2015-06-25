@@ -3,9 +3,9 @@
 var idList = [];
 
 for (var i = 1; i <= 150; i++) {
-    var id = i;
+    var id = i+"";
 
-    if ((i+"i").indexOf('4') == -1) {
+    if (id.charAt(id.length-1) != '4') {
         if (id < 10) {
             id = '00' + i;
         }
@@ -17,4 +17,5 @@ for (var i = 1; i <= 150; i++) {
     }
 }
 
+console.dir(idList);
 console.dir(idList.length);
