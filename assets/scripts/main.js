@@ -36,7 +36,7 @@ var app = {
             },
 
             onTransitionStart: function (swiper) {
-                if (swiper.previousIndex == 3) {
+                if (swiper.previousIndex == 6) {
                     setTimeout(function () {
                         $('.countUp').empty();
                         app.userIdCountUp.reset();
