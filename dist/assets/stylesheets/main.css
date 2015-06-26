@@ -838,6 +838,7 @@ input {
 }
 /* scene05 */
 .scene05 {
+  overflow: hidden;
   background: url("../images/sa7-bg.jpg");
   background-size: cover!important;
 }
@@ -847,8 +848,8 @@ input {
   background: url("../images/sa7-wrap.png");
   background-size: 100% 100%;
   position: absolute;
-  left: 92px;
-  top: 0;
+  left: 70px;
+  top: -25px;
 }
 .scene05 .text {
   opacity: 0;
