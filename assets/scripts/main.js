@@ -18,12 +18,17 @@ var app = {
                 //  scene 01
                 setTimeout(function () {
                     $('.scene01').addClass('active activeTransition');
-                }, 500);
+                }, 200);
             },
 
             //  router
             onTransitionEnd: function (swiper) {
                 var curIndex = swiper.activeIndex;
+                if (curIndex == 7) {
+                    $('#iSlider-arrow').fadeOut(600);
+                } else {
+                    $('#iSlider-arrow').fadeIn(600);
+                }
                 //  show content
                 $('.scene').eq(curIndex).addClass('active activeTransition delay')
                     .siblings('.scene').removeClass('active activeTransition delay');
