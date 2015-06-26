@@ -4,21 +4,7 @@
 
 var app = {
     create: function (){
-        //  create countUp instance for scene05 userId
-        var options = {
-            useEasing : true,
-            useGrouping : true,
-            separator : '',
-            decimal : '',
-            prefix : '',
-            suffix : ''
-        };
-
-        this.userIdCountUp = new CountUp("userId", 0, 888001, 0, 1.2, options);
-
         //  create slider
-        var isVisitedIdPage = false;
-
         app.mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical',
 
@@ -33,28 +19,6 @@ var app = {
                 setTimeout(function () {
                     $('.scene01').addClass('active activeTransition');
                 }, 500);
-            },
-
-            onTransitionStart: function (swiper) {
-                if (swiper.previousIndex == 6) {
-                    $('.countUp').empty();
-                    setTimeout(function () {
-                        app.userIdCountUp.reset();
-                        app.userIdCountUp.start();
-                    }, 1200);
-                }
-
-                if (isVisitedIdPage == false) {
-                    if (localStorage.invite_isvisited) {
-                        var userId = localStorage.invite_visitedUserId;
-                        app.userIdCountUp.endVal = parseInt(userId);
-                        console.log("you have been retrieved yor id: ", userId);
-                    } else {
-                        app.server();
-                    }
-                }
-
-                isVisitedIdPage = true;
             },
 
             //  router
